@@ -336,7 +336,7 @@ class Daemon:
 
         self.home = os.path.expanduser('~/infore')
         scripts_fold = join(
-            self.home, 'datacron/implementation/parameter_optimizer/scripts')
+            self.home, 'Genetic-Algorithm-for-Synopses-Generator/parameter_optimizer/scripts')
 
         # If temp folder does not exist, create it
         if not os.path.exists('tmp'):
@@ -385,7 +385,7 @@ class Daemon:
 
         # Template-File that will be modified to include the right set of parameters each time
         self.template_file_loc = join(
-            self.home, 'datacron/implementation/parameter_optimizer/parameters/maritime_config_template.properties')
+            self.home, 'Genetic-Algorithm-for-Synopses-Generator/parameter_optimizer/parameters/maritime_config_template.properties')
         if not os.path.exists(self.template_file_loc):
             #print(col(f'Template file does not exist in {self.template_file_loc}'))
             raise FileNotFoundError()
@@ -394,7 +394,7 @@ class Daemon:
         self.param_file_loc = join(
             scripts_fold, 'tmp/maritime_config{}.properties'.format(self.id))
 
-        self.synopses_jar_loc = join(self.home, 'datacron/implementation/trajectory_synopses/target/datacron_trajectory_synopses-0.7-type{}.jar'.format(self.id))
+        self.synopses_jar_loc = join(self.home, 'Genetic-Algorithm-for-Synopses-Generator/trajectory_synopses/target/datacron_trajectory_synopses-0.7-type{}.jar'.format(self.id))
 
         # Command that starts application and gives it as an argument the unique id and the input/outputfiles
         self.start_app = [
@@ -418,7 +418,7 @@ class Daemon:
 
         # Location where input data are stored
         self.data_folder = join(
-            self.home, 'datacron/implementation/data/{}/'.format(dataset))
+            self.home, 'Genetic-Algorithm-for-Synopses-Generator/data/{}/'.format(dataset))
 
         if not isinstance(file_names, list):
             file_names = [file_names]
@@ -442,7 +442,7 @@ class Daemon:
             for file_name in file_names:
                 for m in months:
                     src = join(
-                        self.data_folder, 'data_per_type/cross/type{}/{}{}.csv'.format(ship_type, file_name, m))
+                        self.data_folder, 'data_per_type/splitted/type{}/{}{}.csv'.format(ship_type, file_name, m))
                     for line in open(src, 'r'):
                         if len(line) > 2:
                             w.write(line)

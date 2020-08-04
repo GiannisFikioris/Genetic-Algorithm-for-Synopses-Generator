@@ -28,11 +28,11 @@ for ship_type in map(lambda x: x[5:-4], os.listdir('data_per_type/all')):
             data.append((idd, row))
 
             if i < 6 and 6*len(data) >= lines:
-                if not os.path.exists(f'data_per_type/cross/type{ship_type}'):
-                    os.mkdir(f'data_per_type/cross/type{ship_type}')
+                if not os.path.exists(f'data_per_type/splitted/type{ship_type}'):
+                    os.mkdir(f'data_per_type/splitted/type{ship_type}')
 
                 final_len = 0
-                with open(f'data_per_type/cross/type{ship_type}/month{i}.csv', 'w') as ff:
+                with open(f'data_per_type/splitted/type{ship_type}/month{i}.csv', 'w') as ff:
                     for idd, x in data:
                         if len_id[idd] > 200:
                             ff.write(x)
@@ -42,10 +42,10 @@ for ship_type in map(lambda x: x[5:-4], os.listdir('data_per_type/all')):
                 data = []
                 len_id = {}
 
-        if not os.path.exists(f'data_per_type/cross/type{ship_type}'):
-            os.mkdir(f'data_per_type/cross/type{ship_type}')
+        if not os.path.exists(f'data_per_type/splitted/type{ship_type}'):
+            os.mkdir(f'data_per_type/splitted/type{ship_type}')
         final_len = 0
-        with open(f'data_per_type/cross/type{ship_type}/month{i}.csv', 'w') as ff:
+        with open(f'data_per_type/splitted/type{ship_type}/month{i}.csv', 'w') as ff:
             for idd, x in data:
                 if len_id[idd] > 200:
                     ff.write(x)

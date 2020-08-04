@@ -2,14 +2,14 @@
     "version" : "1.1.2",
     "project" : {
         "name" : "datacron_trajectory_synopses-test",
-        "directory" : "/opt/datacron/implementation/trajectory_synopses",
+        "directory" : "/opt/datacron/trajectory_synopses",
         "sources" : [
         ],
         "dependencies" : [
         ],
         "classpath" : [
-            "/opt/datacron/implementation/trajectory_synopses/target/test-classes",
-            "/opt/datacron/implementation/trajectory_synopses/target/classes",
+            "/opt/datacron/trajectory_synopses/target/test-classes",
+            "/opt/datacron/trajectory_synopses/target/classes",
             "/home/john/.m2/repository/org/apache/flink/flink-scala/0.10.2/flink-scala-0.10.2.jar",
             "/home/john/.m2/repository/org/apache/flink/flink-core/0.10.2/flink-core-0.10.2.jar",
             "/home/john/.m2/repository/org/apache/flink/flink-shaded-hadoop2/0.10.2/flink-shaded-hadoop2-0.10.2.jar",
@@ -134,8 +134,8 @@
             "/home/john/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar",
             "/home/john/.m2/repository/org/locationtech/jts/jts-core/1.16.0/jts-core-1.16.0.jar"
         ],
-        "out" : "/opt/datacron/implementation/trajectory_synopses/target",
-        "classesDir" : "/opt/datacron/implementation/trajectory_synopses/target/test-classes",
+        "out" : "/opt/datacron/trajectory_synopses/target",
+        "classesDir" : "/opt/datacron/trajectory_synopses/target/test-classes",
         "resources" : [
         ],
         "scala" : {

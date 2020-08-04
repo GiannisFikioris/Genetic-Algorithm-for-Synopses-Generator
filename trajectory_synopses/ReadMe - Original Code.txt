@@ -144,7 +144,7 @@ TESTS
 
 -- Building the project using MAVEN:
 
-cd ~/infore/datacron/implementation/trajectory_synopses/
+cd ~/infore/Genetic-Algorithm-for-Synopses-Generator/trajectory_synopses/
 
 mvn clean package -Pbuild-jar
 
@@ -155,7 +155,7 @@ mvn clean package -Pbuild-jar
 -------------------------------------------------
 
 -- IMPORTANT! Execution is controlled by a configuration file '*_config.properties'.
--- Such configuration files must always be placed under directory '~/infore/datacron/config/trajectory_synopses/'. Application ALWAYS looks at this path for configuring its execution.
+-- Such configuration files must always be placed under directory '~/infore/Genetic-Algorithm-for-Synopses-Generator/config/trajectory_synopses/'. Application ALWAYS looks at this path for configuring its execution.
 
 -- Main configurations regarding input, output, and parametrization for each use case:
 

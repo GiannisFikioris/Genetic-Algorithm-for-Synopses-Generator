@@ -200,7 +200,7 @@ my_parser.add_argument('-fcode',
                        type=str,
                        default='month',
                        required=True,
-                       help=colored('The files from which to read. This refers to files in ../../data/*/data_per_type/cross/\n', 'cyan'))
+                       help=colored('The files from which to read. This refers to files in ../../data/*/data_per_type/splitted/\n', 'cyan'))
 
 args = my_parser.parse_args()
 

@@ -17,7 +17,7 @@ my_parser.add_argument('data',
 
 my_parser.add_argument('fcode',
                        type=str,
-                       help=col('The files from which to read. This refers to files in ../../data/*/data_per_type/cross/\n', 'cyan'))
+                       help=col('The files from which to read. This refers to files in ../../data/*/data_per_type/splitted/\n', 'cyan'))
 
 my_parser.add_argument('options',
                        metavar='MONTH@OPT@TYPE',

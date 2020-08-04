@@ -52,8 +52,8 @@ object TrajectoryStreamManager{
   //Read parameter values from configuration properties file
   //OPTION #2: File must be specified as an absolute path in order to be recognized by Flink at runtime!
   // val configProperties = "/opt/datacron/config/trajectory_synopses/maritime_config.properties"
-  // val configProperties = "/opt/datacron/implementation/trajectory_synopses/test/config/maritime_config.properties"
-  val configProperties = System.getProperty("user.home")+"/infore/datacron/implementation/parameter_optimizer/scripts/tmp/maritime_config.properties"
+  // val configProperties = "/opt/datacron/trajectory_synopses/test/config/maritime_config.properties"
+  val configProperties = System.getProperty("user.home")+"/infore/Genetic-Algorithm-for-Synopses-Generator/parameter_optimizer/scripts/tmp/maritime_config.properties"
 
   //Prepare a configuration setting for use with parameters read from the properties file
   //This also includes the bounding box for the area of monitoring
@@ -63,7 +63,7 @@ object TrajectoryStreamManager{
 
   // Initialize new ShipInfo instance from file
   var shipInfo = new ShipInfo()
-  // shipInfo = shipInfo.fromFile("/opt/datacron/implementation/trajectory_synopses/test/input/ship_type.csv")
+  // shipInfo = shipInfo.fromFile("/opt/datacron/trajectory_synopses/test/input/ship_type.csv")
 
   //Kafka properties for the Notifications output stream
   val props = new Properties()
@@ -157,7 +157,7 @@ object TrajectoryStreamManager{
 
     //Data source: messages
     // val incomingMessages: DataStream[String] = env.addSource(kafkaConsumer_Messages)
-    // val incomingMessages: DataStream[String] = env.readTextFile("file:///home/giannis/infore/datacron/implementation/trajectory_synopses/test/input/imis_ais_100vessels.csv")
+    // val incomingMessages: DataStream[String] = env.readTextFile("file:///home/giannis/infore/datacron/trajectory_synopses/test/input/imis_ais_100vessels.csv")
     val incomingMessages: DataStream[String] = env.readTextFile(in_file)
 
     // Filtering incoming raw positions by the area of monitoring

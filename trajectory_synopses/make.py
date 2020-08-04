@@ -13,7 +13,7 @@ print(mvn)
 mvn = mvn + ' package -Pbuild-jar'
 
 
-inp = 'src/main/scala/eu/datacron/synopses/maritime/TrajectoryStreamManager.scala'
+inp = 'src/main/scala/eu/Genetic-Algorithm-for-Synopses-Generatorsynopses/maritime/TrajectoryStreamManager.scala'
 old_jar = 'target/datacron_trajectory_synopses-0.7.jar'
 jar = 'target/datacron_trajectory_synopses-0.7'
 
