@@ -5,12 +5,7 @@ import os
 import sys
 
 
-if os.environ['USER'] == 'gfikioris':
-    mvn = '/home/gfikioris/infore/apache-maven-3.0.4/bin/mvn'
-else:
-    mvn = 'mvn'
-print(mvn)
-mvn = mvn + ' package -Pbuild-jar'
+mvn = 'mvn package -Pbuild-jar'
 
 
 inp = 'src/main/scala/eu/datacron/synopses/maritime/TrajectoryStreamManager.scala'
