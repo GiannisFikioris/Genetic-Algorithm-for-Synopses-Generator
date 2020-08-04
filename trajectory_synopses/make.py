@@ -13,13 +13,14 @@ print(mvn)
 mvn = mvn + ' package -Pbuild-jar'
 
 
-inp = 'src/main/scala/eu/Genetic-Algorithm-for-Synopses-Generatorsynopses/maritime/TrajectoryStreamManager.scala'
+inp = 'src/main/scala/eu/datacron/synopses/maritime/TrajectoryStreamManager.scala'
 old_jar = 'target/datacron_trajectory_synopses-0.7.jar'
 jar = 'target/datacron_trajectory_synopses-0.7'
 
-for x in os.listdir('target/'):
-    if x[-4:] == '.jar':
-        os.remove('target/' + x)
+if os.path.exists('target/'):
+    for x in os.listdir('target/'):
+        if x[-4:] == '.jar':
+            os.remove('target/' + x)
 
 with open(inp, 'r') as f:
     og = f.read()
