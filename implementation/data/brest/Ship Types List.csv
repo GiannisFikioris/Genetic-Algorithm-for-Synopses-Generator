@@ -1,0 +1,39 @@
+id_shiptype,shiptype_min,shiptype_max,type_name,ais_type_summary
+1,10,19,Reserved,Unspecified
+2,20,28,Wing In Grnd,Wing in Grnd
+3,29,29,SAR Aircraft,Search and Rescue
+4,30,30,Fishing,Fishing
+5,31,31,Tug,Tug
+6,32,32,Tug,Tug
+7,33,33,Dredger,Special Craft
+8,34,34,Dive Vessel,Special Craft
+9,35,35,Military Ops,Special Craft
+10,36,36,Sailing Vessel,Sailing Vessel
+11,37,37,Pleasure Craft,Pleasure Craft
+12,38,38,Reserved,Unspecified
+13,39,39,Reserved,Unspecified
+14,40,49,High-Speed Craft,High-Speed Craft
+15,50,50,Pilot Vessel,Special Craft
+16,51,51,SAR,Search and Rescue
+17,52,52,Tug,Tug
+18,53,53,Port Tender,Special Craft
+19,54,54,Anti-Pollution,Special Craft
+20,55,55,Law Enforce,Special Craft
+21,56,56,Local Vessel,Special Craft
+22,57,57,Local Vessel,Special Craft
+23,58,58,Medical Trans,Special Craft
+24,59,59,Special Craft,Special Craft
+25,60,69,Passenger,Passenger
+26,70,70,Cargo,Cargo
+27,71,71,Cargo - Hazard A (Major),Cargo
+28,72,72,Cargo - Hazard B,Cargo
+29,73,73,Cargo - Hazard C (Minor),Cargo
+30,74,74,Cargo - Hazard D (Recognizable),Cargo
+31,75,79,Cargo,Cargo
+32,80,80,Tanker,Tanker
+33,81,81,Tanker - Hazard A (Major),Tanker
+34,82,82,Tanker - Hazard B,Tanker
+35,83,83,Tanker - Hazard C (Minor),Tanker
+36,84,84,Tanker - Hazard D (Recognizable),Tanker
+37,85,89,Tanker,Tanker
+38,90,99,Other,Other

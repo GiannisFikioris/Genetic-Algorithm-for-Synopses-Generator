@@ -1,0 +1,6 @@
+tmp/
+tmp_RTEC/
+__pycache__
+plots/
+temp.py
+saves_backup/
