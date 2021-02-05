@@ -11,9 +11,9 @@ This is a free software made to optimize the [Trajectory Synopses Generator](htt
 This repository should be placed in folder `~/infore/datacron/`, i.e. one should run the following commands for installation:
 ```bash
 cd ~
-mkdir -p infore/datacron/
-cd infore/datacron/
-git clone -v https://github.com/GiannisFikioris/Genetic-Algorithm-for-Synopses-Generator.git
+mkdir -p infore/
+cd infore
+git clone -v https://github.com/GiannisFikioris/Genetic-Algorithm-for-Synopses-Generator.git datacron
 ```
 
 To run the genetic algorithm one needs Flink (see folder `implementation/synopses_generator` for installation instructions and version). Flink should also be installed in the directory `~/infore/`.
