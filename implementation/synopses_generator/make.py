@@ -5,17 +5,16 @@ import os
 import sys
 
 
-if os.environ['USER'] == 'gfikioris':
-    mvn = '/home/gfikioris/infore/apache-maven-3.0.4/bin/mvn'
-else:
-    mvn = 'mvn'
-print(mvn)
-mvn = mvn + ' package -Pbuild-jar'
+mvn = 'mvn package -Pbuild-jar'
 
 
 inp = 'src/main/scala/eu/datacron/synopses/maritime/TrajectoryStreamManager.scala'
 old_jar = 'target/datacron_trajectory_synopses-0.7.jar'
 jar = 'target/datacron_trajectory_synopses-0.7'
+
+if not os.path.exists('target/'):
+    os.mkdir('target/')
+
 
 for x in os.listdir('target/'):
     if x[-4:] == '.jar':
